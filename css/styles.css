@@ -5,3 +5,58 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+html {
+  /* 62.5% of 16px = 10px */
+  /* Makes it easier to select rem-based font size */
+  /* e.g. 1rem = 1 x body font-size = 10px */
+  /* so for a 70px font, use 7rem = 7 * 10 = 70px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  /* Note: Inter font has built-in space around chars, so must
+     set bottom margin lower than 2rem */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}

@@ -78,3 +78,15 @@
   - #1b0760;
   ## Body
   - #918ca4
+
+
+# Typeography
+- Monserrat only used in one place, so ditch it
+- Inter variations include bold, semi-bold, extra-bold, medium, and regulat
+  - This is too many to download, so consolidate to
+    - Regular 400
+    - Bold 700
+- Font Sizes (from mobile design)
+  - h1: 70px
+  - h2: 40px
+  - h3: 30px
