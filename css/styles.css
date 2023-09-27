@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /*
  * I. Typography
  */
@@ -133,7 +139,7 @@ a {
 }
 
 /*
- * VI. Lists
+ * IV. Lists
  */
 
 .list {
@@ -186,4 +192,66 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/*
+ * VI. Icons
+ */
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  margin: 1rem 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.btn--primary {
+  background-color: var(--color-headings);
+  color: #fff;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+.btn--outline {
+  background-color: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+
+  &:hover {
+    background-color: var(--color-headings);
+    color: #fff;
+  }
+}
+.btn--block {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
