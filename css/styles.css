@@ -13,7 +13,7 @@
 }
 
 /*
- * I. Typography
+ * 1. Typography
  */
 
 html {
@@ -72,7 +72,7 @@ p {
 }
 
 /*
- * II. Links
+ * 2. Links
  */
 
 a {
@@ -103,7 +103,7 @@ a {
 }
 
 /*
- * III. Badges
+ * 3. Badges
  */
 
 .badge {
@@ -139,7 +139,7 @@ a {
 }
 
 /*
- * IV. Lists
+ * 4. Lists
  */
 
 .list {
@@ -170,7 +170,7 @@ a {
 }
 
 /*
- * V. Icons
+ * 5. Icons
  */
 
 /* Note: Icons use px since they don't change from desktop->mobile */
@@ -195,7 +195,7 @@ a {
 }
 
 /*
- * VI. Icons
+ * 6. Buttons
  */
 
 .btn {
@@ -255,3 +255,7 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/*
+ * 7. Inputs
+ */

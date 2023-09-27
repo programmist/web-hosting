@@ -9,26 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    link
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <a href="#" class="link-arrow">Learn More</a>
-    <div>
+    <div id="links">
+      <a href="#" class="link-arrow">Learn More</a>
+    </div>
+
+    <div id="badges">
       <span class="badge badge--primary">10% OFF</span>
       <span class="badge badge--secondary">20% OFF</span>
       <span class="badge badge--primary badge--small">50% OFF</span>
     </div>
-    <div>
+
+    <div id="lists">
       <ul class="list list--tick">
         <li class="list__item">Item 1</li>
         <li class="list__item">Item 2</li>
         <li class="list__item">Item 3</li>
       </ul>
+
+      <ul class="list list--inline">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
     </div>
-    <div>
+
+    <div id="icons">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -40,7 +50,8 @@
         </svg>
       </span>
     </div>
-    <div>
+
+    <div id="buttons">
       <button class="btn btn--primary">
         <span class="txt">Button primary</span>
       </button>
@@ -50,6 +61,10 @@
       <button class="btn btn--primary btn--block">Buy Now</button>
       <a href="#" class="btn btn--secondary">Buy Now Link</a>
       <a href="#" class="btn btn--primary btn--block">Buy Now Link</a>
+    </div>
+
+    <div id="inputs">
+      <input type="text" class="input" />
     </div>
   </body>
 </html>
