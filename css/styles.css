@@ -232,32 +232,27 @@ a {
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
-}
-
-.btn--primary {
-  background-color: var(--color-headings);
-  color: #fff;
 
   &:hover {
     filter: brightness(0.8);
   }
 }
+
+.btn--primary {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
 .btn--secondary {
   background-color: var(--color-secondary);
   color: #fff;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
 }
+
 .btn--accent {
   background-color: var(--color-accent);
   color: #fff;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
 }
+
 .btn--outline {
   background-color: #fff;
   color: var(--color-headings);
@@ -268,8 +263,14 @@ a {
     color: #fff;
   }
 }
+
 .btn--block {
   width: 100%;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -562,6 +563,62 @@ a {
 
     .quote__company {
       font-size: 1.3rem;
+    }
+  }
+}
+
+/*
+ * 14. Callouts
+ */
+
+.callout {
+  padding: 4rem;
+  border-radius: 15px;
+
+  .btn {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__content {
+  text-align: center;
+  margin: 2rem 0;
+  & p {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+  }
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    padding: 3rem 4rem;
+
+    .btn {
+      font-size: 1.5rem;
+      margin: 0 2rem;
+    }
+
+    .grid--cols-2 {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  .callout__content {
+    text-align: left;
+    & p {
+      font-size: 2rem;
     }
   }
 }
