@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    link
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
@@ -26,12 +27,16 @@
         <li class="list__item">Item 2</li>
         <li class="list__item">Item 3</li>
       </ul>
-
-      <ul class="list list--inline">
-        <li class="list__item">Inline Item 1</li>
-        <li class="list__item">Inline Item 2</li>
-        <li class="list__item">Inline Item 3</li>
-      </ul>
     </div>
+    <span class="icon-container">
+      <svg class="icon icon--primary">
+        <use xlink:href="images/sprite.svg#wordpress"></use>
+      </svg>
+    </span>
+    <span class="icon-container">
+      <svg class="icon">
+        <use xlink:href="images/sprite.svg#settings"></use>
+      </svg>
+    </span>
   </body>
 </html>

@@ -162,3 +162,28 @@ a {
     padding-left: 0;
   }
 }
+
+/*
+ * V. Icons
+ */
+
+/* Note: Icons use px since they don't change from desktop->mobile */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
