@@ -16,11 +16,47 @@
       /* TODO: REMOVE ME AFTER TESTING */
       .__demo-section {
         margin-bottom: 10px;
-        padding: 20px;
+        padding: 5rem;
       }
     </style>
   </head>
   <body>
+    <section id="testimonials" class="__demo-section">
+      <div class="card testimonial">
+        <div class="grid grid--cols-2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="a happy smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                  <p class="quote__company">Mosh company CEO</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
     <section id="grids" class="__demo-section">
       <div class="grid grid--cols-2 grid--cols-3">
         <div style="height: 100px; background: gold"></div>
