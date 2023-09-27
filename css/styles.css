@@ -31,6 +31,9 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+
+  /* TODO: REMOVE ME (using for UI testing */
+  height: 3000px;
 }
 
 h1,
@@ -296,5 +299,33 @@ a {
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
+  }
+}
+
+/*
+ * 8. Cards
+ */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden; /* stop child overflow from covering round corners*/
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary {
+  .card__header {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+}
+
+.card--secondary {
+  .card__header {
+    background-color: var(--color-secondary);
+    color: #fff;
   }
 }

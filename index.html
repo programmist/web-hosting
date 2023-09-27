@@ -12,58 +12,39 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
+    <style>
+      /* TODO: REMOVE ME AFTER TESTING */
+      .__demo-section {
+        margin-bottom: 50px;
+        padding: 50px;
+      }
+    </style>
   </head>
   <body>
-    <div id="links">
-      <a href="#" class="link-arrow">Learn More</a>
-    </div>
+    <section
+      class="__demo-section"
+      style="width: 80%; display: flex; gap: 5rem"
+    >
+      <div class="card card--primary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+          doloribus aliquid veniam, hic mollitia aspernatur!
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
 
-    <div id="badges">
-      <span class="badge badge--primary">10% OFF</span>
-      <span class="badge badge--secondary">20% OFF</span>
-      <span class="badge badge--primary badge--small">50% OFF</span>
-    </div>
+      <div class="card card--secondary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+          doloribus aliquid veniam, hic mollitia aspernatur!
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
+    </section>
 
-    <div id="lists">
-      <ul class="list list--tick">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-      </ul>
-
-      <ul class="list list--inline">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-      </ul>
-    </div>
-
-    <div id="icons">
-      <span class="icon-container">
-        <svg class="icon icon--primary">
-          <use xlink:href="images/sprite.svg#wordpress"></use>
-        </svg>
-      </span>
-      <span class="icon-container">
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#settings"></use>
-        </svg>
-      </span>
-    </div>
-
-    <div id="buttons">
-      <button class="btn btn--primary">
-        <span class="txt">Button primary</span>
-      </button>
-      <button class="btn btn--secondary">Get Started</button>
-      <button class="btn btn--accent">Get Started</button>
-      <button class="btn btn--primary btn--outline">Buy Now</button>
-      <button class="btn btn--primary btn--block">Buy Now</button>
-      <a href="#" class="btn btn--secondary">Buy Now Link</a>
-      <a href="#" class="btn btn--primary btn--block">Buy Now Link</a>
-    </div>
-
-    <div id="inputs">
+    <section id="inputs" class="__demo-section">
       <input type="text" class="input" placeholder="Enter domain name here" />
       <div class="input-group">
         <input type="text" class="input" placeholder="Enter domain name here" />
@@ -77,6 +58,55 @@
         </span>
         <input type="text" class="input" placeholder="Enter domain name here" />
       </div>
-    </div>
+    </section>
+
+    <section id="buttons" class="__demo-section">
+      <button class="btn btn--primary">
+        <span class="txt">Button primary</span>
+      </button>
+      <button class="btn btn--secondary">Get Started</button>
+      <button class="btn btn--accent">Get Started</button>
+      <button class="btn btn--primary btn--outline">Buy Now</button>
+      <button class="btn btn--primary btn--block">Buy Now</button>
+      <a href="#" class="btn btn--secondary">Buy Now Link</a>
+      <a href="#" class="btn btn--primary btn--block">Buy Now Link</a>
+    </section>
+
+    <section id="icons" class="__demo-section">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+      </span>
+      <span class="icon-container">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#settings"></use>
+        </svg>
+      </span>
+    </section>
+
+    <section id="lists" class="__demo-section">
+      <ul class="list list--tick">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
+
+      <ul class="list list--inline">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
+    </section>
+
+    <section id="badges" class="__demo-section">
+      <span class="badge badge--primary">10% OFF</span>
+      <span class="badge badge--secondary">20% OFF</span>
+      <span class="badge badge--primary badge--small">50% OFF</span>
+    </section>
+
+    <section id="links" class="__demo-section">
+      <a href="#" class="link-arrow">Learn More</a>
+    </section>
   </body>
 </html>
