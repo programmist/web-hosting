@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+    <style>
+      /* TODO: REMOVE ME AFTER TESTING */
+      .__demo-section {
+        margin-bottom: 10px;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Begin Component Demos  -->
+    <div id="blocks" class="__demo-section">
+      <section class="block block--dark block--skewed-left">
+        <header class="block__header">
+          <div class="container">
+            <h2 class="block__heading">Heading</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
+              obcaecati.
+            </p>
+          </div>
+        </header>
+      </section>
+      <section class="block container">
+        <header class="block__header">
+          <h2 class="block__heading">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
+            obcaecati.
+          </p>
+        </header>
+      </section>
+    </div>
+    <div id="collapsible" class="__demo-section">
+      <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+          <h2 class="collapsible__heading">Item 1</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+          aspernatur est ab ex incidunt esse, veniam quibusdam libero repellat
+          deleniti?
+        </div>
+      </div>
+      <div class="collapsible">
+        <header class="collapsible__header">
+          <h2 class="collapsible__heading">Item 1</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+          aspernatur est ab ex incidunt esse, veniam quibusdam libero repellat
+          deleniti?
+        </div>
+      </div>
+      <div class="collapsible">
+        <header class="collapsible__header">
+          <h2 class="collapsible__heading">Item 1</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+          aspernatur est ab ex incidunt esse, veniam quibusdam libero repellat
+          deleniti?
+        </div>
+      </div>
+    </div>
+
+    <div id="callouts" class="__demo-section">
+      <div class="callout callout--primary">
+        <div class="grid grid--cols-2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Choose the hosting provider that helps you start easy, build fast,
+              and grow strong! It&apos;s risk-free with our 14-day money back
+              guarantee.
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials" class="__demo-section">
+      <div class="card testimonial">
+        <div class="grid grid--cols-2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="a happy smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                  <p class="quote__company">Mosh company CEO</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div id="grids" class="__demo-section">
+      <div class="grid grid--cols-2 grid--cols-3">
+        <div style="height: 100px; background: gold"></div>
+        <div style="height: 100px; background: dodgerblue"></div>
+        <div style="height: 100px; background: burlywood"></div>
+        <div style="height: 100px; background: navy"></div>
+        <div style="height: 100px; background: cadetblue"></div>
+        <div style="height: 100px; background: coral"></div>
+      </div>
+    </div>
+
+    <div id="quotes" class="__demo-section">
+      <blockquote class="quote">
+        <p class="quote__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+          possimus dignissimos voluptatum at assumenda nisi ex, minima tempore
+          eos numquam?
+        </p>
+        <footer>
+          <div class="media">
+            <div class="media__image">
+              <svg class="icon icon--primary quote__line">
+                <use xlink:href="images/sprite.svg#line"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title quote__author">Jhone Lumeo</h3>
+              <p class="quote__company">Mosh company and CEO</p>
+            </div>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+
+    <div id="media-objects" class="__demo-section">
+      <div class="media">
+        <div class="media__image">
+          <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#snap"></use>
+          </svg>
+        </div>
+        <div class="media__body">
+          <h3 class="media__title">Easy Start & Managed Updates</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+            totam eveniet eos earum eum obcaecati commodi cum expedita possimus
+            error!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="plans" class="__demo-section" style="width: 50%">
+      <div class="plan plan--popular">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100GB SD Storage</li>
+              <li class="list__item">3GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
+          <footer class="card__foot"></footer>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards" class="__demo-section" style="display: flex; gap: 2rem">
+      <div class="card card--primary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
+      <div class="card card--secondary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
+      <div class="card card--primary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
+      <div class="card card--secondary">
+        <header class="card__header">Card Title</header>
+        <div class="card__body">
+          Lorem ipsum dolor sit amet consectetur Lorem, ipsum.
+        </div>
+        <footer class="card__foot"></footer>
+      </div>
+    </div>
+
+    <div id="inputs" class="__demo-section">
+      <input type="text" class="input" placeholder="Enter domain name here" />
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter domain name here" />
+        <button class="btn btn--accent">Search</button>
+      </div>
+      <div class="input-group">
+        <span class="icon-container">
+          <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#wordpress"></use>
+          </svg>
+        </span>
+        <input type="text" class="input" placeholder="Enter domain name here" />
+      </div>
+    </div>
+
+    <div id="buttons" class="__demo-section">
+      <button class="btn btn--primary">
+        <span class="txt">Button primary</span>
+      </button>
+      <button class="btn btn--secondary">Get Started</button>
+      <button class="btn btn--accent">Get Started</button>
+      <button class="btn btn--primary btn--outline">Buy Now</button>
+      <button class="btn btn--primary btn--block">Buy Now</button>
+      <a href="#" class="btn btn--secondary">Buy Now Link</a>
+      <a href="#" class="btn btn--primary btn--block">Buy Now Link</a>
+    </div>
+
+    <div id="icons" class="__demo-section">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+      </span>
+      <span class="icon-container">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#settings"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div id="lists" class="__demo-section">
+      <ul class="list list--tick">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
+
+      <ul class="list list--inline">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
+    </div>
+
+    <div id="badges" class="__demo-section">
+      <span class="badge badge--primary">10% OFF</span>
+      <span class="badge badge--secondary">20% OFF</span>
+      <span class="badge badge--primary badge--small">50% OFF</span>
+    </div>
+
+    <div id="links" class="__demo-section">
+      <a href="#" class="link-arrow">Learn More</a>
+    </div>
+
+    <script src="js/collapsible.js"></script>
+  </body>
+</html>
