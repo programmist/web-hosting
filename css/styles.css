@@ -648,14 +648,14 @@ a {
 
 .collapsible__chevron {
   transform: rotate(-90deg);
-  transition: transform 0.3s linear;
+  transition: transform 0.15s linear;
 }
 
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 0.3s linear;
+  transition: max-height 0.15s linear, opacity 0.15s linear;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -663,7 +663,6 @@ a {
 }
 
 .collapsible--expanded .collapsible__content {
-  display: block;
   max-height: 100vh;
   opacity: 1;
 }
@@ -702,4 +701,72 @@ a {
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertial) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+
+/*
+ * 17. Navbar
+ */
+
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+
+  &.collapsible--expanded {
+    .nav__toggler {
+      opacity: 1;
+      box-shadow: 0 0 0 3px #666;
+      border-radius: 5px;
+    }
+  }
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: opacity 0.1s linear, box-shadow 0.1s linear;
+  cursor: pointer;
+}
+
+.nav__list {
+  /* Setting this to 100% width will always cause it to wrap 
+     due to parent container flex-wrap: wrap */
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #222;
+  & > a {
+    color: #d2d0db;
+    transition: color 0.1s linear;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.nav__brand {
+  /* Bit of a hack to center, but unfortunately the image had built-in bottom padding */
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }

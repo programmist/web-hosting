@@ -22,11 +22,28 @@
   </head>
   <body>
     <!-- Begin Component Demos  -->
+    <div id="navbars" class="__demo-section">
+      <nav class="nav collapsible">
+        <a class="logo nav__brand" href="/">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div id="blocks" class="__demo-section">
       <section class="block block--dark block--skewed-left">
         <header class="block__header">
           <div class="container">
-            <h2 class="block__heading">Heading</h2>
+            <h2 class="block__heading">Skewed Left Dark Block</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
               obcaecati.
@@ -44,7 +61,8 @@
         </header>
       </section>
     </div>
-    <div id="collapsible" class="__demo-section">
+
+    <div id="collapsibles" class="__demo-section">
       <div class="collapsible collapsible--expanded">
         <header class="collapsible__header">
           <h2 class="collapsible__heading">Item 1</h2>
