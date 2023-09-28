@@ -51,6 +51,7 @@ h3 {
   /* Note: Inter font has built-in space around chars, so must
      set bottom margin lower than 2rem */
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -695,16 +696,16 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertial) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertial) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 /*
- * 17. Navbar
+ * 17. Navbarhero__banner
  */
 
 .nav {
@@ -768,5 +769,36 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/*
+ * 18. Hero
+ */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
