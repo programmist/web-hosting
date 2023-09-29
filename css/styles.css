@@ -70,7 +70,7 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 1.8rem;
   }
@@ -415,7 +415,13 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .plan--popular {
+    .card__header {
+      padding: 5rem 2rem;
+    }
+  }
+
   .plan__name {
     font-size: 1.4rem;
   }
@@ -845,5 +851,48 @@ a {
   }
   .badge {
     font-size: 1.6rem;
+  }
+}
+
+/*
+ * 20. Plans block
+ */
+
+/* Requirements
+  - On hover plans cars should get slightly lager with a nice transition
+  - On desktop Popular plan should slightly larger than other plans
+*/
+.block-plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 50rem;
+}
+.plan {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .block-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 120rem;
+  }
+  .plan {
+    .card {
+      margin-bottom: 3rem;
+    }
+
+    .plan.plan--popular .card header.card__header {
+      padding-bottom: 9rem;
+    }
+    .plan-premium__list {
+      margin-bottom: 0;
+    }
   }
 }
