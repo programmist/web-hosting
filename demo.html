@@ -15,6 +15,7 @@
     <style>
       body {
         margin: 3rem;
+        background: #fefefe;
         & > div {
           padding-bottom: 3rem;
         }
@@ -23,6 +24,42 @@
   </head>
   <body>
     <!-- Begin Component Demos  -->
+    <div id="domains">
+      <section class="block container block-domain">
+        <header class="block__header">
+          <h2>Starting at $9 per month</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            deleniti, rem fugiat porro maiores omnis dolorum debitis quas
+            numquam quos.
+          </p>
+        </header>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter domain name here"
+          />
+          <button class="btn btn--accent domains__search-btn">
+            <svg class="icon icon--primary icon--white icon--xsmall">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+            Search
+          </button>
+        </div>
+        <ul class="list grid block-domain__prices">
+          <li><span class="badge">.com $9.26</span></li>
+          <li><span class="badge badge--secondary">.sg $7.91</span></li>
+          <li><span class="badge">.space $9.26</span></li>
+          <li><span class="badge">.info $9.26</span></li>
+          <li><span class="badge">.net $9.26</span></li>
+          <li><span class="badge">.xyz $9.26</span></li>
+          <li><span class="badge">.info $9.26</span></li>
+          <li><span class="badge">.net $9.26</span></li>
+          <li><span class="badge">.xyz $9.26</span></li>
+        </ul>
+      </section>
+    </div>
 
     <div id="hero">
       <section class="block block--dark block--skewed-left hero">
