@@ -348,6 +348,10 @@ a {
 .card--primary .card__header {
   background-color: var(--color-primary);
   color: #fff;
+
+  .badge--primary {
+    background-color: #126de4;
+  }
 }
 
 .card--secondary {
@@ -364,6 +368,7 @@ a {
 /*
  * 9. Plan Component
  */
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -390,6 +395,8 @@ a {
 }
 
 .plan {
+  transition: transform 0.2s ease-out;
+
   .list__item {
     margin-bottom: 2rem;
     letter-spacing: 1px;
@@ -397,6 +404,10 @@ a {
 
   .list {
     margin-bottom: 5rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -412,6 +423,10 @@ a {
       top: -6px;
       right: 5%;
     }
+  }
+
+  &:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -716,7 +731,7 @@ a {
 }
 
 /*
- * 17. Navbarhero__banner
+ * 17. Navbar
  */
 
 .nav {
@@ -858,41 +873,16 @@ a {
  * 20. Plans block
  */
 
-/* Requirements
-  - On hover plans cars should get slightly lager with a nice transition
-  - On desktop Popular plan should slightly larger than other plans
-*/
 .block-plans {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  max-width: 50rem;
-}
-.plan {
+  .grid {
+    gap: 8rem 4rem;
+  }
+
   .card {
-    margin-bottom: 3rem;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 800px) {
-  .block-plans {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    max-width: 120rem;
-  }
-  .plan {
-    .card {
-      margin-bottom: 3rem;
-    }
-
-    .plan.plan--popular .card header.card__header {
-      padding-bottom: 9rem;
-    }
-    .plan-premium__list {
-      margin-bottom: 0;
-    }
-  }
+@media screen and (min-width: 768) {
 }
