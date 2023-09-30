@@ -884,5 +884,34 @@ a {
   }
 }
 
-@media screen and (min-width: 768) {
+/*
+ * 21. Features block
+ */
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__content {
+  padding: 0 2rem;
+}
+
+.feature {
+  margin: 12rem 0;
+  gap: 4rem 2rem;
+
+  &:first-of-type {
+    margin-top: 6rem;
+  }
+}
+
+.feature__image {
+  width: 100%;
+  /* display: inline-block; */
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
