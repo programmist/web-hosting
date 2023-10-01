@@ -935,6 +935,10 @@ a {
   &:first-of-type {
     margin-top: 6rem;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .feature__image {
@@ -951,8 +955,13 @@ a {
  * Showcase block
  */
 
+.block-showcase {
+  padding-top: 8rem;
+}
+
 .showcase__heading {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 3rem;
 }
 
@@ -965,7 +974,7 @@ a {
 }
 
 .showcase__content {
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
   .media__title {
     color: #fff;
     margin-bottom: 1.5rem;
@@ -978,6 +987,10 @@ a {
 
   .media {
     margin-bottom: 6rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .media__body {
