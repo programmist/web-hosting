@@ -687,6 +687,7 @@ a {
 .collapsible__chevron {
   transform: rotate(-90deg);
   transition: transform 0.15s linear;
+  cursor: pointer;
 }
 
 .collapsible__content {
@@ -1001,3 +1002,88 @@ a {
 /*
  * Footer block
  */
+.footer {
+  background-color: #232323;
+}
+
+.footer__heading {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+  .list__item a {
+    color: #777;
+    transition: color 0.3s;
+  }
+}
+
+.footer__brand {
+  text-align: center;
+  margin-top: 7rem;
+
+  & img {
+    /* TODO: Consider applying this to all images */
+    width: 100%;
+    max-width: 230px;
+  }
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.footer__section-list {
+  margin: 0;
+
+  & li > a:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .collapsible__chevron {
+      display: none;
+    }
+
+    .collapsible__content {
+      opacity: 1;
+      max-height: 100vh;
+    }
+  }
+
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__section-list {
+    font-size: 1.5rem;
+
+    .list__item {
+      margin: 2rem 0;
+    }
+  }
+}
