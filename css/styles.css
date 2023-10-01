@@ -23,7 +23,7 @@
 }
 
 /*
- * 1. Typography
+ * Typography
  */
 
 ::selection {
@@ -92,7 +92,7 @@ p {
 }
 
 /*
- * 2. Links
+ * Links
  */
 
 a {
@@ -123,7 +123,7 @@ a {
 }
 
 /*
- * 3. Badges
+ * Badges
  */
 
 .badge {
@@ -160,7 +160,7 @@ a {
 }
 
 /*
- * 4. Lists
+ * Lists
  */
 
 .list {
@@ -191,7 +191,7 @@ a {
 }
 
 /*
- * 5. Icons
+ * Icons
  */
 
 /* Note: Icons use px since they don't change from desktop->mobile */
@@ -239,7 +239,7 @@ a {
 }
 
 /*
- * 6. Buttons
+ * Buttons
  */
 
 .btn {
@@ -302,7 +302,7 @@ a {
 }
 
 /*
- * 7. Inputs
+ * Inputs
  */
 .input {
   border-radius: var(--border-radius);
@@ -343,7 +343,7 @@ a {
 }
 
 /*
- * 8. Cards
+ * Cards
  */
 .card {
   border-radius: 7px;
@@ -377,7 +377,7 @@ a {
 }
 
 /*
- * 9. Plan Component
+ * Plan Component
  */
 
 .plan__name {
@@ -466,7 +466,7 @@ a {
 }
 
 /*
- * 10. Media Component
+ * Media Component
  */
 
 .media {
@@ -486,7 +486,7 @@ a {
 }
 
 /*
- * 11. Quotes
+ * Quotes
  */
 
 .quote {
@@ -543,7 +543,7 @@ a {
 }
 
 /*
- * 12. Grid
+ * Grid
  */
 .grid {
   display: grid;
@@ -564,7 +564,7 @@ a {
 }
 
 /*
- * 13. Testimonials
+ * Testimonials
  */
 .testimonial {
   padding: 6rem;
@@ -611,7 +611,7 @@ a {
 }
 
 /*
- * 14. Callouts
+ * Callouts
  */
 
 .callout {
@@ -667,7 +667,7 @@ a {
 }
 
 /*
- * 15. Collapsible
+ * Collapsible
  */
 
 .collapsible__header {
@@ -706,7 +706,7 @@ a {
 }
 
 /*
- * 16. Blocks
+ * Blocks
  */
 
 .block {
@@ -745,7 +745,7 @@ a {
 }
 
 /*
- * 17. Navbar
+ * Navbar
  */
 
 .nav {
@@ -813,7 +813,7 @@ a {
 }
 
 /*
- * 18. Hero
+ * Hero
  */
 
 .hero__tagline {
@@ -840,7 +840,7 @@ a {
 }
 
 /*
- * 19. Domain block
+ * Domain block
  */
 
 .domains__search-btn {
@@ -881,7 +881,7 @@ a {
 }
 
 /*
- * 20. Plans block
+ * Plans block
  */
 
 .block-plans {
@@ -896,7 +896,7 @@ a {
 }
 
 /*
- * 21. Features block
+ * Features block
  */
 
 .feature__heading {
@@ -927,7 +927,7 @@ a {
 }
 
 /*
- * 22. Showcase block
+ * Showcase block
  */
 
 .showcase__heading {
@@ -997,3 +997,7 @@ a {
     }
   }
 }
+
+/*
+ * Footer block
+ */
