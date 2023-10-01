@@ -1,0 +1,15 @@
+{
+  "name": "html-css-3",
+  "version": "1.0.0",
+  "description": "## Explanation This site was created as practice, to further hone my HTML/CSS skills.",
+  "scripts": {
+    "start": "parcel index.html --port 8080",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
