@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Moshify</title>
@@ -33,13 +34,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--cols-2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 class="block__heading" data-aos="fade-right">
+            Cloud Hosting for Pros
+          </h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -53,7 +56,7 @@
       </div>
     </section>
 
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-up">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -81,7 +84,7 @@
       </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--cols-3">
         <div class="plan">
           <div class="card card--secondary" style="flex-grow: 0">
@@ -163,7 +166,7 @@
       </header>
       <!-- Easy -->
       <article class="grid grid--cols-2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary icon--medium-regular">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -177,7 +180,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -299,7 +302,7 @@
           <h2 class="showcase__heading">User-Friendly Control Panel</h2>
         </header>
         <div class="grid grid--cols-2 showcase__grid">
-          <picture class="block-showcase__image">
+          <picture class="block-showcase__image" data-aos="fade-right">
             <source
               type="image/webp"
               srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -313,7 +316,7 @@
               alt="The control panel displayed on iPad"
             />
           </picture>
-          <ul class="list showcase__content">
+          <ul class="list showcase__content" data-aos="fade-up">
             <li>
               <div class="media">
                 <div class="media__image">
@@ -369,7 +372,7 @@
       </div>
     </section>
 
-    <section class="block block-tesimonials">
+    <section class="block block-tesimonials" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -417,6 +420,8 @@
       </div>
     </section>
 
+    <!-- To position the callout better on larger screens wrap this and the 
+         footer in a relative-positioned container and use absolute positioning -->
     <div class="container">
       <div class="callout callout--primary callout-signup">
         <div class="grid grid--cols-2">
@@ -529,5 +534,9 @@
     </footer>
 
     <script src="js/collapsible.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
