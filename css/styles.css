@@ -201,6 +201,11 @@ a {
   height: var(--icon-width);
 }
 
+.icon--medium-regular {
+  width: calc(var(--icon-width) / 1.7);
+  height: calc(var(--icon-height) / 1.7);
+}
+
 .icon--medium {
   width: calc(var(--icon-width) / 1.5);
   height: calc(var(--icon-height) / 1.5);
@@ -718,7 +723,7 @@ a {
  */
 
 .block {
-  --padding-vertial: 6rem;
+  --padding-vertial: 5rem;
   padding: var(--padding-vertial) 2rem;
 }
 
@@ -911,10 +916,16 @@ a {
 
 .feature__heading {
   margin: 1rem 0;
+  font-weight: 600;
 }
 
 .feature__content {
   padding: 0 2rem;
+
+  .icon__container {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .feature {
